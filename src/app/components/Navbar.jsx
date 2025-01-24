@@ -54,12 +54,11 @@ const Navbar = async () => {
                     {await isAuthenticated() ? (
                         <LogoutLink>Log out</LogoutLink>
                     ) : (
-                        <button
-                            onClick={login}
-                            className="px-4 py-2 bg-blue-500 rounded text-white font-semibold hover:bg-blue-600"
+                        <LoginLink
+                            className="px-4 py-2 bg-blue-500 rounded  text-white font-semibold hover:bg-blue-600"
                         >
                             Log In
-                        </button>
+                        </LoginLink>
                     )}
                 </div>
             </div>
